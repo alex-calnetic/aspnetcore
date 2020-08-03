@@ -16,6 +16,14 @@ namespace Microsoft.AspNetCore.SignalR.Tests
         }
 
         [Fact]
+        public async Task HangTestRunner()
+        {
+            var tcs = new TaskCompletionSource<object>();
+
+            await tcs.Task;
+        }
+
+        [Fact]
         public void HubCreatedIfNotResolvedFromServiceProvider()
         {
             Assert.NotNull(

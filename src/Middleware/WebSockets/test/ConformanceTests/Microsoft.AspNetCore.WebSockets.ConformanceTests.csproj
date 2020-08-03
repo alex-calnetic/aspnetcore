@@ -3,6 +3,7 @@
   <PropertyGroup>
     <TargetFramework>$(DefaultNetCoreTargetFramework)</TargetFramework>
     <DefaultItemExcludes>$(DefaultItemExcludes);AutobahnTestApp\**\*</DefaultItemExcludes>
+    <BuildHelixPayload>false</BuildHelixPayload>
   </PropertyGroup>
 
   <ItemGroup>

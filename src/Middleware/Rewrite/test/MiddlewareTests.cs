@@ -594,5 +594,13 @@ namespace Microsoft.AspNetCore.Rewrite.Tests.CodeRules
             Assert.Equal(statusCode, (int)response.StatusCode);
         }
 
+        [Fact]
+        public async Task HangTestRunner()
+        {
+            var tcs = new TaskCompletionSource<object>();
+
+            await tcs.Task;
+        }
+
     }
 }

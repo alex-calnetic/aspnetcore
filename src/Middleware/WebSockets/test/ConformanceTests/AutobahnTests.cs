@@ -22,6 +22,15 @@ namespace Microsoft.AspNetCore.WebSockets.ConformanceTest
         {
         }
 
+        [Fact]
+        public void Segfault()
+        {
+            unsafe
+            {
+                *(int*)0x12345678 = 0x1;
+            }
+        }
+
         // Skip if wstest is not installed for now, see https://github.com/aspnet/WebSockets/issues/95
         // We will enable Wstest on every build once we've gotten the necessary infrastructure sorted out :).
         [ConditionalFact(Skip = "https://github.com/dotnet/aspnetcore/issues/4350")]

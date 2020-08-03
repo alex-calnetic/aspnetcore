@@ -12,6 +12,15 @@ namespace Microsoft.AspNetCore.WebSockets.Test
     public class AddWebSocketsTests
     {
         [Fact]
+        public void Segfault()
+        {
+            unsafe
+            {
+                *(int*)0x12345678 = 0x1;
+            }
+        }
+
+        [Fact]
         public void AddWebSocketsConfiguresOptions()
         {
             var serviceCollection = new ServiceCollection();
