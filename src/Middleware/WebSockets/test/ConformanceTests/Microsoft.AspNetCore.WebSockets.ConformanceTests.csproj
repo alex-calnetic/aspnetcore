@@ -4,6 +4,7 @@
     <TargetFramework>$(DefaultNetCoreTargetFramework)</TargetFramework>
     <DefaultItemExcludes>$(DefaultItemExcludes);AutobahnTestApp\**\*</DefaultItemExcludes>
     <BuildHelixPayload>false</BuildHelixPayload>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
 
   <ItemGroup>

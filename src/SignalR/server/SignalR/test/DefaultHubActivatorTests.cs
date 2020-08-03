@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.SignalR.Internal;
 using Moq;
 using Moq.Protected;
 using Xunit;
+using System.Threading.Tasks;
 
 namespace Microsoft.AspNetCore.SignalR.Tests
 {
