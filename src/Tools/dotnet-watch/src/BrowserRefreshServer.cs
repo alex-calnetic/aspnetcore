@@ -98,10 +98,9 @@ namespace Microsoft.DotNet.Watcher.Tools
 
             if (_refreshServer != null)
             {
-                await _refreshServer.StopAsync();
                 _refreshServer.Dispose();
             }
-
+            
             _taskCompletionSource.TrySetResult();
         }
     }
