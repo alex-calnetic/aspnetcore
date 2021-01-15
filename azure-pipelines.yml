@@ -17,12 +17,7 @@ steps:
     scannerMode: 'MSBuild'
     projectKey: 'HIQAnalysis'
     projectName: 'HIQAnalysis'
-
-- task: DotNetCoreCLI@2
-  inputs:
-    command: 'build'
-    projects: '**/*.sln'
-    
+   
 - task: SonarQubeAnalyze@4
 - task: SonarQubePublish@4
   inputs:
