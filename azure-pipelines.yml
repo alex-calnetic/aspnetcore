@@ -13,12 +13,12 @@ steps:
 
 - task: SonarQubePrepare@4
   inputs:
+    SonarQube: 'Sonar'
     scannerMode: 'CLI'
     configMode: 'manual'
     cliProjectKey: 'HIQAnalysis'
     cliProjectName: 'HIQAnalysis'
     cliSources: '.'
-    projectName: 'HIQAnalysis'
 - task: SonarQubeAnalyze@4
 - task: SonarQubePublish@4
   inputs:
