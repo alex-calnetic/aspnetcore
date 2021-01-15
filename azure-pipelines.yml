@@ -17,7 +17,7 @@ steps:
     configMode: 'manual'
     cliProjectKey: 'HIQAnalysis'
     cliProjectName: 'HIQAnalysis'
-    cliSources: '.''
+    cliSources: '.'
     projectName: 'HIQAnalysis'
 - task: SonarQubeAnalyze@4
 - task: SonarQubePublish@4
