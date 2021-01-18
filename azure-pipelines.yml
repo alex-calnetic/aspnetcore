@@ -11,6 +11,10 @@ pool:
 
 steps:
 
+- task: CmdLine@2
+  inputs:
+    script: 'rm -rf .git'
+
 - task: SonarQubePrepare@4
   inputs:
     SonarQube: 'Sonar'
